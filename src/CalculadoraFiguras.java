@@ -8,6 +8,8 @@ public class CalculadoraFiguras {
     // Parametros: base, altura | Retorna: area -> double
     public static double calcularAreaTriangulo() {}
 
-    // Parametros: radio | Retorna: area -> double
-    public static double calcularAreaCirculo() {}
+    // Parametros: radio | Retorna: area
+public static double calcularAreaCirculo(double radio) {
+    return Math.PI * radio * radio;
+
 }
