@@ -22,6 +22,7 @@ public class CalculadoraFigurasCli {
                 case 1:
                     break;
                 case 2:
+                    CalculadoraFiguras.calcularAreaRectangulo();
                     break;
                 case 3:
                     break;
