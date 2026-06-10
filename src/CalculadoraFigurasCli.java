@@ -38,7 +38,10 @@ public class CalculadoraFigurasCli {
                     System.out.printf("El área del triángulo es: %.2f%n%n", area);
                     break;
                 case 4:
-                    break;
+                    System.out.print("Ingrese el valor del radio: ");
+                    double radio = teclado.nextDouble();
+                    double resultado = CalculadoraFiguras.calcularAreaCirculo(radio);
+                    System.out.printf("El área del círculo es: %.2f%n", resultado);
                 case 5:
                     return;
             }
