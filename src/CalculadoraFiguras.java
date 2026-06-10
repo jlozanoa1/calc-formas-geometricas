@@ -29,4 +29,8 @@ public class CalculadoraFiguras {
     public static double calcularAreaCirculo() {
         return 0;
     }
+    // Parametros: radio | Retorna: area
+public static double calcularAreaCirculo(double radio) {
+    return Math.PI * radio * radio;
+
 }
