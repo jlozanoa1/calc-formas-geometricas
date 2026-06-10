@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-
 public class CalculadoraFigurasCli {
-    public static void inicializar () {
+    public static void inicializar() {
 
         Scanner teclado = new Scanner(System.in);
 
@@ -15,11 +14,14 @@ public class CalculadoraFigurasCli {
             System.out.println("5. Salir.");
             System.out.printf("%nSeleccione una opción: ");
 
-
             int opcionUsuario = teclado.nextInt();
 
             switch (opcionUsuario) {
                 case 1:
+                    System.out.print("Ingrese el valor del lado del cuadrado: ");
+                    double lado = teclado.nextDouble();
+                    double areaCuadrado = CalculadoraFiguras.calcularAreaCuadrado(lado);
+                    System.out.printf("El área del cuadrado es: %.2f%n%n", areaCuadrado);
                     break;
                 case 2:
                     CalculadoraFiguras.calcularAreaRectangulo();
