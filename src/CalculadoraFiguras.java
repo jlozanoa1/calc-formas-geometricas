@@ -1,16 +1,33 @@
+import java.util.Scanner;
+
 public class CalculadoraFiguras {
-    // Parametros: lado | Retorna: area -> double
-    // public static double calcularAreaCuadrado() {}
-
-    // Parametros: ancho, alto | Retorna: area -> double
-    // public static double calcularAreaRectangulo() {}
-
-    // Parametros: base, altura | Retorna: area -> double
     public static double calcularAreaTriangulo(double base, double altura) {
         double resultado = (base * altura) / 2;
         return resultado;
     }
 
-    // Parametros: radio | Retorna: area -> double
-    // public static double calcularAreaCirculo() {}
+    public static double calcularAreaCuadrado() {
+        return 0;
+    }
+
+    public static double calcularAreaRectangulo() {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Ingrese el ancho: ");
+        double ancho = teclado.nextDouble();
+
+        System.out.print("Ingrese el alto: ");
+        double alto = teclado.nextDouble();
+
+        double area = ancho * alto;
+
+        System.out.println("El área del rectángulo es: " + area);
+
+        return area;
+    }
+
+    // Parametros: radio | Retorna: area
+    public static double calcularAreaCirculo(double radio) {
+        return Math.PI * radio * radio;
+
 }
