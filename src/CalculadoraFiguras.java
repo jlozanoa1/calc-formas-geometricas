@@ -6,8 +6,8 @@ public class CalculadoraFiguras {
         return resultado;
     }
 
-    public static double calcularAreaCuadrado() {
-        return 0;
+    public static double calcularAreaCuadrado(double lado) {
+        return lado * lado;
     }
 
     public static double calcularAreaRectangulo() {
@@ -26,8 +26,7 @@ public class CalculadoraFiguras {
         return area;
     }
 
-    // Parametros: radio | Retorna: area
     public static double calcularAreaCirculo(double radio) {
         return Math.PI * radio * radio;
-
+    }
 }
