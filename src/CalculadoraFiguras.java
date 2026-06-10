@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class CalculadoraFiguras {
+    public static double calcularAreaTriangulo(double base, double altura) {
+        double resultado = (base * altura) / 2;
+        return resultado;
+    }
 
     public static double calcularAreaCuadrado() {
         return 0;
@@ -22,15 +26,8 @@ public class CalculadoraFiguras {
         return area;
     }
 
-    public static double calcularAreaTriangulo() {
-        return 0;
-    }
-
-    public static double calcularAreaCirculo() {
-        return 0;
-    }
     // Parametros: radio | Retorna: area
-public static double calcularAreaCirculo(double radio) {
-    return Math.PI * radio * radio;
+    public static double calcularAreaCirculo(double radio) {
+        return Math.PI * radio * radio;
 
 }

@@ -25,6 +25,15 @@ public class CalculadoraFigurasCli {
                     CalculadoraFiguras.calcularAreaRectangulo();
                     break;
                 case 3:
+                    System.out.print("Ingrese el valor de la base: ");
+                    double base = teclado.nextDouble();
+
+                    System.out.print("Ingrese el valor de la altura: ");
+                    double altura = teclado.nextDouble();
+
+                    double area = CalculadoraFiguras.calcularAreaTriangulo(base, altura);
+
+                    System.out.printf("El área del triángulo es: %.2f%n%n", area);
                     break;
                 case 4:
                     break;
